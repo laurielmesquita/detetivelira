@@ -24,9 +24,7 @@ $('.navbar h1 a, a.topp').smoothScroll({
 	speed: 1250,
 });
 
-(function($) {
-	'use strict';
-	$(document).ready(function() {
+$(document).ready(function() {
 		$(window).bind('load', function() {
 			parallaxInit();
 		});
@@ -36,6 +34,7 @@ $('.navbar h1 a, a.topp').smoothScroll({
 			if (testMobile == null) {
 				$('#sobre .well').parallax("50%", 0.1);
 				$('#servicos .well').parallax("50%", 0.1);
+				$('#equipamentos .well').parallax("50%", 0.1);
 			}
 		}
 		parallaxInit();
@@ -62,4 +61,3 @@ $('.navbar h1 a, a.topp').smoothScroll({
 			return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
 		}
 	};
-}(jQuery));

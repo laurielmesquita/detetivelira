@@ -4,7 +4,7 @@
              Website:	Detetive Lira
          Description:	HTML5/OOCSS3
  Layout online since:	2013
-         Last Change:	29.4.2014
+         Last Change:	30.4.2014
 ================================================
 */
 
@@ -72,17 +72,22 @@ a:focus,
 img {
 	width: 100%;
 }
-[class*=btn-] {
+[class*=btn-],
+#contato * {
 	border-radius: 0;
 }
 
 /*  TYPOGRAPHY  */
 h1, h2, h3, h4, h5, h6 { color:#555; color: #000; font-family: 'Raleway-B', sans-serif; }
 #sobre h3 {	margin-top: 30px; }
-#servicos h3 { font-weight: normal; font-family: 'Raleway', sans-serif; }
+#servicos h3, #contato h3 { font-weight: normal; font-family: 'Raleway', sans-serif; }
 #servicos .thumbnail h3,
-#equipamentos .thumbnail h4 {	font-family: 'Raleway-S', sans-serif; }
+#equipamentos .thumbnail h3 {	font-family: 'Raleway-S', sans-serif; }
 #equipamentos .thumbnail h4 { margin-bottom: 15px; }
+#contato h1,
+#contato h3 {
+	color: #fff;
+}
 /* MAIN MENU */
 .navbar {
 	margin-bottom: 10px;
@@ -237,17 +242,22 @@ h1 small {
 #equipamentos .thumbnail .caption {
 	padding: 15px;
 	border-top: 1px solid #ddd;
+	background-color: #f9f9f9;
 }
 .well {
 	margin-top: 120px;
 	margin-bottom: 0px;
 	padding: 0;
-	max-height: 430px;
+	width: 100%;
 	border: none;
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
 	border-radius: 0px;
-	background-color: transparent;
+	background-color: #191919;
+	background-attachment: fixed;
+	background-position: 50% 0;
+	background-size: cover;
+	background-repeat: no-repeat;
 	box-shadow: none;
 }
 .well h2 {
@@ -257,23 +267,84 @@ h1 small {
 	font-family: 'Raleway', sans-serif;
 }
 #sobre .well {
-	background: url("../images/info-1.jpg") center bottom no-repeat fixed;
-	background-size: cover;
+	background-image: url("../images/info-1.jpg");
 }
 #servicos .well {
-	background: url("../images/info-2.jpg") 50% 0 no-repeat fixed;
-	background-size: cover;
+	background-image: url("../images/info-2.jpg");
 }
 #equipamentos .well {
-	background: url("../images/info-3.jpg") 50% 0 no-repeat fixed;
-	background-size: cover;
+	background-image: url("../images/info-3.jpg");
 }
 .img-overlay-2 {
 	position: relative;
 	padding: 100px 0;
 	width: 100%;
 	height: 100%;
-	background: url("../images/overlay3.png") repeat;
+	background: url("../images/overlay4.png") repeat;
+}
+
+#contato {
+	margin-top: 100px;
+	padding-bottom: 110px;
+	background-color: #191919;
+	background-image: url("../images/contato.jpg");
+	background-position: center center;
+	background-size: cover;
+}
+#contato small {
+	color: #8b8b8b;
+}
+#contato p,
+#contato label {
+	color: #A5A5A5;
+	font-weight: normal;
+}
+#contato p {
+	margin-top: 20px;
+	font-size: 22px;
+	font-family: 'Raleway', sans-serif;
+}
+#contato textarea {
+	max-width: 100%;
+	max-height: 150px;
+	height: 150px;
+}
+#contato input,
+#contato textarea {
+	border:1px solid rgba(255, 255, 255, 0.25);
+	background-color: #2f2f2f;
+	background-color: rgba(255, 255, 255, 0.1);
+	color: #fff;
+}
+#contato input:hover,
+#contato textarea:hover {
+	border:1px solid rgba(255, 255, 255, 0.7);
+	background-color: rgba(255, 255, 255, 0.1);
+}
+#contato .btn-form {
+	display: block;
+	margin-top: 40px;
+	padding:15px;
+	width:100%;
+	height: auto;
+	outline: none;
+	border: 0;
+	background-color: #494949;
+	color:#A5A5A5;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+footer.widescreen {
+	padding: 70px 0 50px;
+	background-color: #e84646;
+}
+footer h4 {
+	font-family: 'Raleway', sans-serif;
+}
+footer h4,
+footer p {
+	color: #191919;
 }
 
 /* BUTTONS */
@@ -286,7 +357,7 @@ h1 small {
 	text-transform: uppercase;
 }
 .btn-border-img:hover {
-	background-color: #696f78;
+	background-color: #494949;
 	color: #fff;
 }
 .btn-border {
@@ -303,4 +374,33 @@ h1 small {
 /* FIX RULES */
 .mgt-20 {
 	margin-top: 20px;
+}
+
+.seven-cols [class*=col-] {
+	margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .seven-cols .col-sm-1,
+  .seven-cols .col-sm-1,
+  .seven-cols .col-lg-1  {
+    width: 100%;
+    *width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .seven-cols .col-md-1,
+  .seven-cols .col-sm-1,
+  .seven-cols .col-lg-1 {
+    width: 14.285714285714285714285714285714%;
+    *width: 14.285714285714285714285714285714%;
+  }
+}
+@media (min-width: 1200px) {
+  .seven-cols .col-md-1,
+  .seven-cols .col-sm-1,
+  .seven-cols .col-lg-1 {
+    width: 14.285714285714285714285714285714%;
+    *width: 14.285714285714285714285714285714%;
+  }
 }
