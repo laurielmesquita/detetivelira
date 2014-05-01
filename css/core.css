@@ -4,7 +4,7 @@
              Website:	Detetive Lira
          Description:	HTML5/OOCSS3
  Layout online since:	2013
-         Last Change:	30.4.2014
+         Last Change:	1.5.2014
 ================================================
 */
 
@@ -55,6 +55,7 @@ body {
 	height: 100%;
 	color: #6F6E6E !important;
 	font-weight: 400;
+	font-size: 15px;
 	font-family: 'Lato', sans-serif;
 	line-height: 24px;
 	text-rendering: optimizeLegibility;
@@ -78,7 +79,7 @@ img {
 }
 
 /*  TYPOGRAPHY  */
-h1, h2, h3, h4, h5, h6 { color:#555; color: #000; font-family: 'Raleway-B', sans-serif; }
+h1, h2, h3, h4, h5, h6 { color:#555; color: #2B2B2B; font-family: 'Raleway-B', sans-serif; }
 #sobre h3 {	margin-top: 30px; }
 #servicos h3, #contato h3 { font-weight: normal; font-family: 'Raleway', sans-serif; }
 #servicos .thumbnail h3,
@@ -103,7 +104,7 @@ h1, h2, h3, h4, h5, h6 { color:#555; color: #000; font-family: 'Raleway-B', sans
 	text-transform: uppercase;
 	letter-spacing: 0px!important;
 	font-weight: 400;
-	font-size: 14px;
+	font-size: 13px;
 	font-family: 'Lato', sans-serif;
 }
 .navbar-default .navbar-nav > li > a:hover {
@@ -145,6 +146,9 @@ h1, h2, h3, h4, h5, h6 { color:#555; color: #000; font-family: 'Raleway-B', sans
 	text-decoration: none;
 	font-size: 30px;
 	font-family: 'Raleway', sans-serif;
+}
+.brand:hover a {
+	color: #e84646;
 }
 h1 small {
 	color: #e84646;
@@ -299,9 +303,8 @@ h1 small {
 	color: #A5A5A5;
 	font-weight: normal;
 }
-#contato p {
-	margin-top: 20px;
-	font-size: 22px;
+#contato p.phone {
+	font-size: 20px;
 	font-family: 'Raleway', sans-serif;
 }
 #contato textarea {
@@ -313,13 +316,12 @@ h1 small {
 #contato textarea {
 	border:1px solid rgba(255, 255, 255, 0.25);
 	background-color: #2f2f2f;
-	background-color: rgba(255, 255, 255, 0.1);
+	background-color: rgba(255, 255, 255, 0.15);
 	color: #fff;
 }
 #contato input:hover,
 #contato textarea:hover {
 	border:1px solid rgba(255, 255, 255, 0.7);
-	background-color: rgba(255, 255, 255, 0.1);
 }
 #contato .btn-form {
 	display: block;
@@ -328,12 +330,20 @@ h1 small {
 	width:100%;
 	height: auto;
 	outline: none;
-	border: 0;
+	border:1px solid rgba(255, 255, 255, 0.25);
 	background-color: #494949;
+	background-color: rgba(73, 73, 73, .35);
 	color:#A5A5A5;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
+}
+#contato .btn-form:hover {
+	border:1px solid rgba(255, 255, 255, 0.7);
+	background-color: #e84646;
+	color: #fff;
+}
+#contato strong {
+	color: #e84646;
+	font-weight: normal;
+	font-family: 'Raleway', sans-serif;
 }
 footer.widescreen {
 	padding: 70px 0 50px;
@@ -344,7 +354,7 @@ footer h4 {
 }
 footer h4,
 footer p {
-	color: #191919;
+	color: #2B2B2B;
 }
 
 /* BUTTONS */
@@ -375,9 +385,18 @@ footer p {
 .mgt-20 {
 	margin-top: 20px;
 }
-
+.mgt-50 {
+	margin-top: 50px;
+}
 .seven-cols [class*=col-] {
 	margin-bottom: 30px;
+}
+
+a,
+.btn {
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
 }
 
 @media (min-width: 768px) {
