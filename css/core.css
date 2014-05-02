@@ -338,6 +338,7 @@ h1 small {
 #contato .btn-form:hover {
 	border:1px solid rgba(255, 255, 255, 0.7);
 	background-color: #e84646;
+	border-color: #e84646;
 	color: #fff;
 }
 #contato strong {
@@ -385,11 +386,13 @@ footer p {
 .mgt-20 {
 	margin-top: 20px;
 }
-.mgt-50 {
-	margin-top: 50px;
-}
 .seven-cols [class*=col-] {
 	margin-bottom: 30px;
+}
+@media screen and (max-width:992px) {
+	.mgt-50 {
+		margin-top: 50px;
+	}
 }
 
 a,
