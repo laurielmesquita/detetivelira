@@ -14,7 +14,7 @@ $('.nav').onePageNav({
 	filter: '',
 	easing: 'swing',
 });
-$('.navbar h1 a, .jumbotron p a, #sobre a, #servicos a').smoothScroll({
+$('.navbar h1 a, .jumbotron p a, #sobre a, #servicos a, #equipamentos a').smoothScroll({
 	speed: 750,
 });
 $('.navbar h1 a, a.topp').smoothScroll({
