@@ -81,12 +81,13 @@ img {
 /*  TYPOGRAPHY  */
 h1, h2, h3, h4, h5, h6 { color:#555; color: #2B2B2B; font-family: 'Raleway-B', sans-serif; }
 #sobre h3 {	margin-top: 30px; }
-#servicos h3, #contato h3 { font-weight: normal; font-family: 'Raleway', sans-serif; }
+#servicos h3, #contato h3, #contato h4 { font-weight: normal; font-family: 'Raleway', sans-serif; }
 #servicos .thumbnail h3,
 #equipamentos .thumbnail h3 {	font-family: 'Raleway-S', sans-serif; }
 #equipamentos .thumbnail h4 { margin-bottom: 15px; }
 #contato h1,
-#contato h3 {
+#contato h3,
+#contato h4 {
 	color: #fff;
 }
 /* MAIN MENU */
@@ -299,8 +300,10 @@ h1 small {
 	color: #A5A5A5;
 	font-weight: normal;
 }
-#contato p.phone {
+#contato p.big,
+#contato p.big a {
 	font-size: 20px;
+	color: #fff;
 	font-family: 'Raleway', sans-serif;
 }
 #contato textarea {
@@ -381,6 +384,9 @@ footer p {
 /* FIX RULES */
 .mgt-20 {
 	margin-top: 20px;
+}
+.mgt-30 {
+	margin-top: 30px;
 }
 .seven-cols [class*=col-] {
 	margin-bottom: 30px;
