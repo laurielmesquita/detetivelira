@@ -29,9 +29,9 @@ $(document).ready(function() {
 	function parallaxInit() {
 		testMobile = isMobile.any();
 		if (testMobile == null) {
-			$('#sobre .well').parallax("50%", 0.1);
-			$('#servicos .well').parallax("50%", 0.1);
-			$('#equipamentos .well').parallax("50%", 0.1);
+			$('#sobre .well').parallax("50%", 0.2);
+			$('#servicos .well').parallax("50%", 0.2);
+			$('#equipamentos .well').parallax("50%", 0.2);
 		}
 	}
 	parallaxInit();

@@ -294,6 +294,7 @@ h1 small {
 	color: #8b8b8b;
 }
 #contato p,
+#contato p a,
 #contato label {
 	color: #A5A5A5;
 	font-weight: normal;
@@ -337,7 +338,7 @@ h1 small {
 	color: #fff;
 }
 #contato strong {
-	color: #e84646;
+	color: #ff4d4d;
 	font-weight: normal;
 	font-family: 'Raleway', sans-serif;
 }
@@ -390,6 +391,7 @@ footer p {
     }
     .well {
 	    background-attachment: scroll;
+	    background-position: center top !important;
 			height: auto;
 			width: 100%;
     }
