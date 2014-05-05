@@ -9,6 +9,7 @@
     <meta name="author" content="Detetive Lira">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/core.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -22,7 +23,7 @@
   </head>
   <body>
     <div id="top"></div>
-    <header class="main-header">
+    <header id="header" class="main-header" role="banner">
       <div class="container">
         <nav class="navbar navbar-default row" role="navigation">
           <div class="col-xs-12 col-sm-4 col-md-5">
@@ -37,7 +38,7 @@
           <div class="col-xs-12 col-sm-8 col-md-7">
             <h4 class="pull-left hide">Menu de Navegação</h4>
             <div class="collapse navbar-collapse" id="main-menu">
-              <ul class="nav navbar-nav navbar-right">
+              <ul id="menu" class="nav navbar-nav navbar-right">
                 <li>
                   <a class="topp" href="#top" title="Top">Home</a>
                 </li>
@@ -65,9 +66,9 @@
           <div class="row">
             <div class="col-md-12">
               <div class="jumbotron">
-                <h1>INVESTIGAÇÃO PARTICULAR</h1>
-                <h3>Garantimos sigilo, competência e resultados</h3>
-                <p><a class="btn btn-border-img btn-large" href="#sobre">Saiba mais &#8288; &#8288; &#8288; &#8288; <span class="glyphicon glyphicon-arrow-down"></span></a></p>
+                <h1 class="wow bounceInDown animated" data-wow-duration="2s" data-wow-delay="3s">INVESTIGAÇÃO PARTICULAR</h1>
+                <h3 class="wow bounceInUp animated" data-wow-duration="2s" data-wow-delay="4s">Garantimos sigilo, competência e resultados</h3>
+                <p class="wow fadeIn animated" data-wow-duration="2s" data-wow-delay="6s"><a class="btn btn-border-img btn-large" href="#sobre" role="button">Saiba mais &#8288; &#8288; &#8288; &#8288; <span class="glyphicon glyphicon-arrow-down"></span></a></p>
               </div>
             </div>
           </div>
@@ -79,7 +80,7 @@
         <div class="row clearfix">
           <div class="col-md-12">
             <div class="page-header">
-              <h1>Sobre Nós <br><small>Conheça mais sobre nós e o nosso trabalho</small></h1>
+              <h1 class="wow fadeInRightBig animated" data-wow-offset="80">Sobre Nós <br><small class="wow fadeIn animated" data-wow-duration="2s" data-wow-delay="1.5s">Conheça mais <strong>sobre nós</strong> e o <strong>nosso trabalho</strong></small></h1>
             </div>
             <div class="row clearfix">
               <div class="col-md-12">
@@ -95,7 +96,7 @@
                 <p>Não importa a complexidade do seu caso, pois nossos investigadores o proverão com um serviço altamente eficaz e profissional que lhe trará todo o esclarecimento de suas dúvidas, a satisfação e a paz de espírito que você necessita e merece, tudo por um preço dentro de sua capacidade de investimento.
                   Navegue por nosso Site e conheça melhor as soluções que a Brasil Investigações lhe oferece.
                 </p>
-                <p><a class="btn btn-border" href="#contato">Tire suas dúvidas &#8288; &#8288; &#8594;</a></p>
+                <p><a class="btn btn-border" href="#contato" role="button">Tire suas dúvidas &#8288; &#8288; &#8594;</a></p>
               </div>
             </div>
           </div>
@@ -107,8 +108,7 @@
             <div class="row">
               <div class="col-xs-1"></div>
               <div class="col-xs-10 text-center">
-                <h2 class="fadeInUp text-center quote">Nós podemos <strong>ajudar</strong> com o problema que você não pode compartilhar com <strong>mais ninguém</strong>.</h2>
-                <a class="btn btn-border-img btn-large" href="#contato">CONTATO &#8288; &#8288; &#8288; &#8288; <span class="glyphicon glyphicon-arrow-down"></span></a>
+                <h2 class="text-center quote">Nós podemos <strong>ajudar</strong> com o problema que você não pode compartilhar com <strong>mais ninguém</strong>.</h2>
               </div>
               <div class="col-xs-1"></div>
             </div>
@@ -121,35 +121,41 @@
         <div class="row clearfix">
           <div class="col-md-12">
             <div class="page-header">
-              <h1>Serviços <br><small>Mais de 20 anos oferecendo uma grande variedade de serviços</small></h1>
+              <h1 class="wow fadeInRightBig animated" data-wow-offset="80">Serviços <br><small class="wow fadeIn animated" data-wow-duration="2s" data-wow-delay="1.5s">Mais de <strong>20 anos</strong> oferecendo uma grande <strong>variedade de serviços</strong></small></h1>
             </div>
             <div class="row">
               <div class="col-md-4">
-                <div class="thumbnail">
-                  <img alt="300x200" src="images/serv-1.jpg">
+                <article class="thumbnail">
+                  <figure>
+                  	<img alt="300x200" src="images/serv-1.jpg">
+                  </figure>
                   <div class="caption">
                     <h3>Casos Conjugais</h3>
                     <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                   </div>
-                </div>
+                </article>
               </div>
               <div class="col-md-4">
-                <div class="thumbnail">
-                  <img alt="300x200" src="images/serv-2.jpg">
+                <article class="thumbnail">
+                  <figure>
+                  	<img alt="300x200" src="images/serv-2.jpg">
+                  </figure>
                   <div class="caption">
                     <h3>Filhos x Drogas</h3>
                     <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                   </div>
-                </div>
+                </article>
               </div>
               <div class="col-md-4">
-                <div class="thumbnail">
-                  <img alt="300x200" src="images/serv-3.jpg">
+                <article class="thumbnail">
+                  <figure>
+                  	<img alt="300x200" src="images/serv-3.jpg">
+                  </figure>
                   <div class="caption">
                     <h3>Localizar Pessoas</h3>
                     <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                   </div>
-                </div>
+                </article>
               </div>
             </div>
             <div class="row clearfix mgt-20">
@@ -193,7 +199,7 @@
                     </ul>
                   </div>
                 </div>
-                <p class="mgt-20"><a class="btn btn-border" href="#contato">Envie uma mesnagem &#8288; &#8288; &#8594;</a></p>
+                <p class="mgt-20"><a class="btn btn-border" href="#contato" role="button">Envie uma mesnagem &#8288; &#8288; &#8594;</a></p>
               </div>
             </div>
           </div>
@@ -205,8 +211,7 @@
             <div class="row">
               <div class="col-xs-1"></div>
               <div class="col-xs-10 text-center">
-                <h2 class="fadeInUp text-center quote">Resultados extremamente <strong>eficazes</strong>, com total <strong>discrição</strong> e <strong>profissionalismo</strong>.</h2>
-                <a class="btn btn-border-img btn-large" href="#contato">CONTATO &#8288; &#8288; &#8288; &#8288; <span class="glyphicon glyphicon-arrow-down"></span></a>
+                <h2 class="text-center quote">Resultados extremamente <strong>eficazes</strong>, com total <strong>discrição</strong> e <strong>profissionalismo</strong>.</h2>
               </div>
               <div class="col-xs-1"></div>
             </div>
@@ -219,45 +224,45 @@
         <div class="row clearfix">
           <div class="col-md-12">
             <div class="page-header">
-              <h1>Equipamentos <br><small>Dispositivos de última geração à sua disposição</small>
+              <h1 class="wow fadeInRightBig animated" data-wow-offset="80">Equipamentos <br><small class="wow fadeIn animated" data-wow-duration="2s" data-wow-delay="1.5s">Dispositivos de <strong>última geração</strong> à sua disposição</small>
               </h1>
             </div>
             <div class="row">
               <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
+                <article class="thumbnail">
                   <img alt="300x200" src="images/equi-1.jpg">
                   <div class="caption">
                     <h4>Repetidor digital de áudio e vídeo 3G/3, 5G GPS</h4>
                     <p>Repete sinais e transmite imagens e vídeos individualmente or GPS controlado pelo sistema digital 3G/3, 5G via celular.</p>
                   </div>
-                </div>
+                </article>
               </div>
               <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
+                <article class="thumbnail">
                   <img alt="300x200" src="images/equi-2.jpg">
                   <div class="caption">
                     <h4>Escuta de Ambiente e Telefone GSM Profissional</h4>
                     <p>Sem limite de distância, você pode usar um chip GSM da sua operadora de telefonia celular. Você ouve o som com alta qualidade e volume alto.</p>
                   </div>
-                </div>
+                </article>
               </div>
               <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
+                <article class="thumbnail">
                   <img alt="300x200" src="images/equi-3.jpg">
                   <div class="caption">
                     <h4>Microfone profissional ultra sensível 300 metros</h4>
                     <p>Amplificador de voz com controle atenuador de sons a distância, poderá escutar sons com clareza incrível apontando em direção ao alvo.</p>
                   </div>
-                </div>
+                </article>
               </div>
               <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
+                <article class="thumbnail">
                   <img alt="300x200" src="images/equi-4.jpg">
                   <div class="caption">
                     <h4>Relógio gravador de áudio e vídeo com 8GB</h4>
                     <p>Câmera built-in: 1.3 Mega pixels CMOS, memória built-in: 4GB/8GB, vídeo resolution: 640x480, vídeo em formato: AVI.</p>
                   </div>
-                </div>
+                </article>
               </div>
             </div>
           </div>
@@ -269,8 +274,7 @@
             <div class="row">
               <div class="col-xs-1"></div>
               <div class="col-xs-10 text-center">
-                <h2 class="fadeInUp text-center quote">A <strong>verdade amarga</strong> ainda é melhor que uma <strong>doce mentira</strong>. <br><strong>Verdade</strong> e <strong>integridade</strong> ainda nos importam.</h2>
-                <a class="btn btn-border-img btn-large" href="#contato">CONTATO &#8288; &#8288; &#8288; &#8288; <span class="glyphicon glyphicon-arrow-down"></span></a>
+                <h2 class="text-center quote">A <strong>verdade amarga</strong> ainda é melhor que uma <strong>doce mentira</strong>. <br><strong>Verdade</strong> e <strong>integridade</strong> ainda nos importam.</h2>
               </div>
               <div class="col-xs-1"></div>
             </div>
@@ -283,7 +287,7 @@
         <div class="row clearfix">
           <div class="col-md-12">
             <div class="page-header">
-              <h1>Facilidade<br><small>Aceitamos todos os tipos de cartões</small>
+              <h1 class="wow fadeInRightBig animated" data-wow-offset="80">Facilidade<br><small class="wow fadeIn animated" data-wow-duration="2s" data-wow-delay="1.5s">Aceitamos todos os <strong>cartões de crédito</strong></small>
               </h1>
             </div>
             <div class="row seven-cols">
@@ -318,12 +322,12 @@
         <div class="row clearfix">
           <div class="col-md-12">
             <div class="page-header">
-              <h1>Contato <br><small>Entre em contato conosco e tire suas dúvidas</small></h1>
+              <h1 class="wow fadeInRightBig animated" data-wow-offset="80">Contato <br><small class="wow fadeIn animated" data-wow-duration="2s" data-wow-delay="1.5s">Entre em contato conosco e tire suas dúvidas</small></h1>
             </div>
           </div>
         </div>
         <div class="row clearfix">
-          <div class="col-md-6 col-md-push-6">
+          <div class="wow fadeInRightBig animated col-md-6 col-md-push-6">
             <h3>Fale diretamente com a gente</h3>
             <p>Garantimos um serviço que assegura a satisfação no interesse de nossos clientes. A dedicação exclusiva dos profissionais envolvidos em cada caso propicia um resultado ágil e confiável. Ligue para agora:</p>
             <p class="big mgt-20"><span class="glyphicon glyphicon-phone"></span> &#8288;<strong>Oi</strong> <small>(86)</small> <a href="tel:+558688369802" title="Operadora Oi">8836.9802</a></p>
@@ -331,10 +335,10 @@
             <p class="big"><span class="glyphicon glyphicon-phone"></span> &#8288;<strong>Vivo</strong> <small>(86)</small> <a href="tel:+558699754949" title="Operadora Vivo">9975.4949</a></p>
             <p class="big"><span class="glyphicon glyphicon-phone"></span> &#8288;<strong>Claro</strong> <small>(86)</small> <a href="tel:+558694958200">9495.8200</a></p>
             <h3 class="mgt-30">Ou envie um email</h3>
-            <p>Fique à vontade caso queira nos enviar um email em outro momento</p>
+            <p>Fique à vontade caso queira nos enviar um email em outro momento:</p>
             <p class="big"><span class="glyphicon glyphicon-envelope"></span> &#8288; <a href="mailto:detetivelira@gmail.com">detetivelira@gmail.com</a></p>
           </div>
-          <div class="col-md-6 col-md-pull-6 mgt-50">
+          <div class="wow fadeInLeftBig animated col-md-6 col-md-pull-6 mgt-50">
             <h3>Envie uma mensagem</h3>
             <form role="form" id="form2" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate="" action="https://detetivelira.wufoo.com/forms/m17s3qyw00ov64c/#public">
               <div class="form-group">
@@ -356,7 +360,7 @@
         </div>
       </div>
     </section>
-    <footer class="widescreen text-center">
+    <footer class="widescreen text-center" role="contentinfo">
       <div class="container">
         <div class="row clearfix">
           <div class="col-md-12">
@@ -367,13 +371,15 @@
       </div>
     </footer>
     <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/royalpreloader.js"></script>
     <script type="text/javascript" src="js/easing.js"></script>
     <script type="text/javascript" src="js/parallax.js"></script>
     <script type="text/javascript" src="js/scrollto.js"></script>
     <script type="text/javascript" src="js/nav.js"></script>
     <script type="text/javascript" src="js/smooth-scroll.js"></script>
     <script type="text/javascript" src="js/ba-bbq.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/wow.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
     <script>
       (function(i, s, o, g, r, a, m) {

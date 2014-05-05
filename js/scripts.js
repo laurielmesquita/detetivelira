@@ -25,7 +25,6 @@ $(document).ready(function() {
 	$(window).bind('load', function() {
 		parallaxInit();
 	});
-
 	function parallaxInit() {
 		testMobile = isMobile.any();
 		if (testMobile == null) {
@@ -58,3 +57,8 @@ var isMobile = {
 		return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
 	}
 };
+$('#menu li a, .brand a').click(function() {
+	if ($('.collapse').hasClass('in')) {
+		$('.collapse').removeClass('in');
+	}
+});
