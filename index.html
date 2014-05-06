@@ -8,16 +8,15 @@
     <meta name="keywords" content="piauí, detetive, piaui, sigilo, investigação, particular, lira, conjugais, conjugal, desaparecido, monitoramento, rastreamento, confiabilidade, discrição">
     <meta name="author" content="Detetive Lira">
     <meta property="og:locale" content="pt_BR">
-		<meta property="og:url" content="http://detetivelira-pi.com">
-		<meta property="og:title" content="Detetive Lira - Investigação particular no piauí">
-		<meta property="og:site_name" content="Detetive Lira">
-		<meta property="og:description" content="Investigação particular no piauí">
-		<meta property="og:image" content="http://detetivelira-pi.com/images/screen.jpg">
-		<meta property="og:image:type" content="image/jpeg">
-		<meta property="og:image:width" content="800">
-		<meta property="og:image:height" content="600">
-		<meta property="og:type" content="website">
-
+    <meta property="og:url" content="http://detetivelira-pi.com">
+    <meta property="og:title" content="Detetive Lira - Investigação particular no piauí">
+    <meta property="og:site_name" content="Detetive Lira">
+    <meta property="og:description" content="Investigação particular no piauí">
+    <meta property="og:image" content="http://detetivelira-pi.com/images/screen.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="600">
+    <meta property="og:type" content="website">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/core.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
@@ -79,7 +78,7 @@
               <div class="jumbotron">
                 <h1 class="wow bounceInDown animated" data-wow-duration="2s" data-wow-delay="2s">INVESTIGAÇÃO PARTICULAR</h1>
                 <h3 class="wow bounceInUp animated" data-wow-duration="2s" data-wow-delay="3s">Garantimos sigilo, competência e resultados</h3>
-                <p class="wow fadeIn animated" data-wow-duration="1.5s" data-wow-delay="5s"><a class="btn btn-border-img btn-large" href="#sobre" role="button">Saiba mais &#8288; &#8288; &#8288; &#8288; <span class="glyphicon glyphicon-arrow-down"></span></a></p>
+                <p class="wow fadeIn animated" data-wow-duration="1.5s" data-wow-delay="4.2s"><a class="btn btn-border-img btn-large" href="#sobre" role="button">Saiba mais &#8288; &#8288; &#8288; &#8288; <span class="glyphicon glyphicon-arrow-down"></span></a></p>
               </div>
             </div>
           </div>
@@ -138,7 +137,7 @@
               <div class="col-md-4">
                 <article class="thumbnail">
                   <figure>
-                  	<img alt="300x200" src="images/serv-1.jpg">
+                    <img alt="300x200" src="images/serv-1.jpg">
                   </figure>
                   <div class="caption">
                     <h3>Casos Conjugais</h3>
@@ -149,7 +148,7 @@
               <div class="col-md-4">
                 <article class="thumbnail">
                   <figure>
-                  	<img alt="300x200" src="images/serv-2.jpg">
+                    <img alt="300x200" src="images/serv-2.jpg">
                   </figure>
                   <div class="caption">
                     <h3>Filhos x Drogas</h3>
@@ -160,11 +159,11 @@
               <div class="col-md-4">
                 <article class="thumbnail">
                   <figure>
-                  	<img alt="300x200" src="images/serv-3.jpg">
+                    <img alt="300x200" src="images/serv-3.jpg">
                   </figure>
                   <div class="caption">
                     <h3>Localizar Pessoas</h3>
-                    <p>Investigações realizadas de acordo com o período estipulado e composto por seguimentos e registros de todos os passos da pessoa investigada. Tudo devidamente documentado através de fotos e filmagens, técnicas adotadas para que não ocorram dúvidas referente ás informações transmitidas ao contratante. Utilizando recursos de equipamentos de investigação, monitoramento e levantamento de dados.</p>
+                    <p>Investigações baseadas no intervalo de tempo, data aproximada e composto por informações sobre hábitos, pessoas mais próximas e últimos registros da pessoa a ser localizada.</p>
                   </div>
                 </article>
               </div>
@@ -210,7 +209,7 @@
                     </ul>
                   </div>
                 </div>
-                <p class="mgt-20"><a class="btn btn-border" href="#contato" role="button">Envie uma mesnagem &#8288; &#8288; &#8594;</a></p>
+                <p class="mgt-20"><a class="btn btn-border" href="#contato" role="button">Entre em contato &#8288; &#8288; &#8594;</a></p>
               </div>
             </div>
           </div>
@@ -351,18 +350,21 @@
           </div>
           <div class="wow fadeInLeftBig animated col-md-6 col-md-pull-6 mgt-50" data-wow-duration="1.5s">
             <h3>Envie uma mensagem</h3>
-            <form role="form" id="form2" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate="" action="https://detetivelira.wufoo.com/forms/m17s3qyw00ov64c/#public">
+            <form role="form" id="form2" class="wufoo topLabel page" data-toggle="validator" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate="" action="https://detetivelira.wufoo.com/forms/m17s3qyw00ov64c/#public">
               <div class="form-group">
                 <label for="Field5">Seu nome</label>
-                <input id="Field5" name="Field5" type="text" class="form-control" tabindex="2" required="" placeholder="Nome">
+                <input id="Field5" name="Field5" type="text" class="form-control" tabindex="1" placeholder="Nome" data-error="Por favor, preencha esse campo!" required>
+                <div class="help-block with-errors"></div>
               </div>
               <div class="form-group">
                 <label for="Field3">Seu email</label>
-                <input id="Field3" name="Field3" type="email" class="form-control" tabindex="2" required="" placeholder="Email">
+                <input id="Field3" name="Field3" type="email" class="form-control" tabindex="2" placeholder="Email" data-error="Por favor, insira um email válido!" required>
+                <div class="help-block with-errors"></div>
               </div>
               <div class="form-group">
                 <label for="Field6">Escreva sua mensagem</label>
-                <textarea id="Field6" name="Field6" class="form-control" tabindex="3" onkeyup="" required="" placeholder="Mensagem"></textarea>
+                <textarea id="Field6" name="Field6" class="form-control" tabindex="3" placeholder="Mensagem" data-error="Por favor, preencha esse campo!" required></textarea>
+                <div class="help-block with-errors"></div>
               </div>
               <button id="saveForm" name="saveForm" type="submit" class="btn btn-form">Enviar &#8288; <span class="glyphicon glyphicon-send"></span></button>
               <input type="hidden" id="idstamp" name="idstamp" value="p9qmg6jI2BDCYBojQLJl665JIPguu3HicSw7NVivfVk=">
@@ -382,15 +384,9 @@
       </div>
     </footer>
     <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/royalpreloader.js"></script>
     <script type="text/javascript" src="js/easing.js"></script>
-    <script type="text/javascript" src="js/parallax.js"></script>
-    <script type="text/javascript" src="js/scrollto.js"></script>
-    <script type="text/javascript" src="js/nav.js"></script>
-    <script type="text/javascript" src="js/smooth-scroll.js"></script>
-    <script type="text/javascript" src="js/ba-bbq.js"></script>
-    <script type="text/javascript" src="js/wow.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
     <script>
       (function(i, s, o, g, r, a, m) {
