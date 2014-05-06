@@ -4,7 +4,7 @@
              Website:	Detetive Lira
          Description:	HTML5/OOCSS3
  Layout online since:	2013
-         Last Change:	3.5.2014
+         Last Change:	5.5.2014
 ================================================
 */
 
@@ -19,14 +19,14 @@
        url('../fonts/lato-regular-webfont.svg#48e70b8825d557df57af3e4f7d4c31be') format('svg');
 }
 @font-face {
+  font-weight:  200;
+  font-style:   normal;
   font-family: 'Raleway-L';
   src: url('../fonts/Raleway-Light.eot');
   src: url('../fonts/Raleway-Light.eot?#iefix') format('embedded-opentype'),
        url('../fonts/Raleway-Light.woff') format('woff'),
        url('../fonts/Raleway-Light.ttf')  format('truetype'),
        url('../fonts/Raleway-Light.svg#a629611727a36c86101ab9fa7aceda04') format('svg');
-  font-style:   normal;
-  font-weight:  200;
 }
 @font-face {
   font-weight:  400;
@@ -77,16 +77,16 @@ a:focus,
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
 	background-color: transparent;
-  color: #e84646;
+  color: #e0403a;
   text-decoration: none;
 }
 ::selection {
-  background-color: #e84646;
+  background-color: #e0403a;
   color: #fff;
   text-shadow: none;
 }
 ::-moz-selection {
-  background-color: #e84646;
+  background-color: #e0403a;
   color: #fff;
   text-shadow: none;
 }
@@ -141,7 +141,7 @@ h1, h2, h3, h4, h5, h6 { color:#555; color: #2B2B2B; font-family: 'Raleway-B', s
 	font-family: 'Lato', sans-serif;
 }
 .navbar-default .navbar-nav > li > a:hover {
-	color: #e84646;
+	color: #e0403a;
 }
 .navbar-collapse {
 	margin-top: 15px;
@@ -168,7 +168,7 @@ h1, h2, h3, h4, h5, h6 { color:#555; color: #2B2B2B; font-family: 'Raleway-B', s
   margin-top: 5px;
 }
 .navbar-default .navbar-toggle:hover .icon-bar {
-  background-color: #e84646;
+  background-color: #e0403a;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
@@ -181,10 +181,10 @@ h1, h2, h3, h4, h5, h6 { color:#555; color: #2B2B2B; font-family: 'Raleway-B', s
 	font-family: 'Raleway-R', sans-serif;
 }
 .brand:hover a {
-	color: #e84646;
+	color: #e0403a;
 }
 h1 small {
-	color: #e84646;
+	color: #e0403a;
 	font-weight: 100 !important;
 	font-family: 'Raleway-R', sans-serif;
 }
@@ -199,8 +199,8 @@ h1 small strong {
 	left: 0;
 	z-index: 1035;
 	width: 100%;
-	background-color: #f9f9f9;
-	background-color: rgba(249, 249, 249, .85);
+	background-color: #fff;
+	background-color: rgba(255, 255, 255, .80);
 /*
 	-webkit-transition:all .25s ease;
 	-moz-transition:all .25s ease;
@@ -298,7 +298,7 @@ h1 small strong {
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
 	border-radius: 0px;
-	background-color: #191919;
+	background-color: #0f0f0f;
 	background-attachment: fixed;
 	background-position: 50% 0;
 	-webkit-background-size: cover;
@@ -321,8 +321,8 @@ h1 small strong {
 	margin: 0;
 	color: #fff !important;
 	font-weight: 100 !important;
-	line-height: 50px;
 	font-family: 'Raleway-L', sans-serif;
+	line-height: 50px;
 }
 .well h2 strong {
 	font-family: 'Raleway-B', sans-serif;
@@ -332,13 +332,13 @@ h1 small strong {
 	padding: 150px 0;
 	width: 100%;
 	height: 100%;
-	background: url("../images/overlay4.png") repeat;
+	background: url("../images/overlay3.png") repeat;
 }
 
 #contato {
 	margin-top: 100px;
 	padding-bottom: 110px;
-	background-color: #191919;
+	background-color: #0f0f0f;
 	background-image: url("../images/contato.jpg");
 	background-position: center center;
 	background-size: cover;
@@ -354,8 +354,8 @@ h1 small strong {
 }
 #contato p.big,
 #contato p.big a {
-	font-size: 20px;
 	color: #fff;
+	font-size: 20px;
 	font-family: 'Raleway-R', sans-serif;
 }
 #contato textarea {
@@ -382,14 +382,14 @@ h1 small strong {
 	height: auto;
 	outline: none;
 	border:1px solid rgba(255, 255, 255, 0.25);
-	background-color: #494949;
+	background-color: #0f0f0f;
 	background-color: rgba(73, 73, 73, .35);
 	color:#A5A5A5;
 }
 #contato .btn-form:hover {
 	border:1px solid rgba(255, 255, 255, 0.7);
-	border-color: #e84646;
-	background-color: #e84646;
+	border-color: #e0403a;
+	background-color: #e0403a;
 	color: #fff;
 }
 #contato strong {
@@ -399,7 +399,7 @@ h1 small strong {
 }
 footer.widescreen {
 	padding: 70px 0 50px;
-	background-color: #e84646;
+	background-color: #e0403a;
 }
 footer h4 {
 	font-family: 'Raleway-B', sans-serif;
@@ -414,12 +414,12 @@ footer p {
 	margin-top: 20px;
 	padding: 20px 25px;
 	border: 0;
-	background-color: #e84646;
+	background-color: #e0403a;
 	color: #fff;
 	text-transform: uppercase;
 }
 .btn-border-img:hover {
-	background-color: #494949;
+	background-color: #0f0f0f;
 	color: #fff;
 }
 .btn-border {
@@ -428,8 +428,8 @@ footer p {
 	color: #555;
 }
 .btn-border:hover {
-	border-color: #e84646;
-	background-color: #e84646;
+	border-color: #e0403a;
+	background-color: #e0403a;
 	color: #fff;
 }
 
@@ -448,10 +448,10 @@ footer p {
 	    margin-bottom: 60px;
     }
     .well {
+			width: 100%;
+			height: auto;
 	    background-attachment: scroll;
 	    background-position: center top !important;
-			height: auto;
-			width: 100%;
     }
     .img-overlay-2 {
 	    padding: 80px 0;
@@ -499,65 +499,57 @@ img {
 }
 
 /* PRELOADER */
-body.royal_loader { background: none!important; visibility: hidden!important; }
+body.royal_loader {
+	visibility: hidden !important;
+	background: none !important;
+}
 #royal_preloader {
-   visibility: visible;
     position: fixed;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
     z-index: 9999999999;
+   visibility: visible;
     -webkit-transition: opacity 0.2s linear 0.8s;
-       -moz-transition: opacity 0.2s linear 0.8s;
-        -ms-transition: opacity 0.2s linear 0.8s;
-         -o-transition: opacity 0.2s linear 0.8s;
-            transition: opacity 0.2s linear 0.8s;
+		-moz-transition: opacity 0.2s linear 0.8s;
+		-ms-transition: opacity 0.2s linear 0.8s;
+		-o-transition: opacity 0.2s linear 0.8s;
+		transition: opacity 0.2s linear 0.8s;
 }
-#royal_preloader.complete { opacity: 0; }
+#royal_preloader.complete {
+	opacity: 0;
+}
 #royal_preloader .background {
     position: absolute;
     top: 0px;
+    right: 0px;
     bottom: 0px;
     left: 0px;
-    right: 0px;
-    background-color: #191919!important;
+    background-color: #0f0f0f !important;
     -webkit-transition: background 0.5s linear;
-       -moz-transition: background 0.5s linear;
-        -ms-transition: background 0.5s linear;
-         -o-transition: background 0.5s linear;
-            transition: background 0.5s linear;
+		-moz-transition: background 0.5s linear;
+		-ms-transition: background 0.5s linear;
+		-o-transition: background 0.5s linear;
+		transition: background 0.5s linear;
 }
 #royal_preloader.number .percentage {
-    color: #646E7C;
-	background: transparent;
-    font-family: 'Lato',sans-serif;
-  	text-align: center;
-    margin: -90px 0px 0px -90px;
-    background-image: url('../images/loader.gif');
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    padding-top: 110px;
-    width: 180px;
     position: absolute;
-    font-size: 25px;
     top: 50%;
     left: 50%;
+    margin: -90px 0px 0px -90px;
+    padding-top: 110px;
+    width: 180px;
+		background: transparent;
+    background-image: url('../images/loader.gif');
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    color: #8b8b8b;
+  	text-align: center;
+    font-size: 25px;
     -webkit-transition: all 0.3s linear 0.5s;
-       -moz-transition: all 0.3s linear 0.5s;
-        -ms-transition: all 0.3s linear 0.5s;
-         -o-transition: all 0.3s linear 0.5s;
-            transition: all 0.3s linear 0.5s;
-}
-
-.wow:nth-child(1),
-.wow:nth-child(2),
-.wow:nth-child(3),
-.wow:nth-child(4),
-.wow:nth-child(5),
-.wow:nth-child(6)  {
-	visibility: hidden;
-}
-.wow {
-	visibility:visible;
+		-moz-transition: all 0.3s linear 0.5s;
+		-ms-transition: all 0.3s linear 0.5s;
+		-o-transition: all 0.3s linear 0.5s;
+		transition: all 0.3s linear 0.5s;
 }

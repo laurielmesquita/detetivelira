@@ -1,4 +1,3 @@
-
 (function(){var a,b=function(a,b){return function(){return a.apply(b,arguments)}};a=function(){function a(){}
 return a.prototype.extend=function(a,b){var c,d;for(c in a)
 d=a[c],null!=d&&(b[c]=d);return b},a.prototype.isMobile=function(a){return/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(a)},a}(),this.WOW=function(){function c(a){null==a&&(a={}),this.scrollCallback=b(this.scrollCallback,this),this.scrollHandler=b(this.scrollHandler,this),this.start=b(this.start,this),this.scrolled=!0,this.config=this.util().extend(a,this.defaults)}
